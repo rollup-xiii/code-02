@@ -1,0 +1,9 @@
+curl --proto '=https' --tlsv1.2 -sSf https://install.fuel.network/fuelup-init.sh | sh
+
+export PATH="$HOME/.fuelup/bin:$PATH"
+
+source /root/.bashrc
+
+fuelup toolchain install latest
+
+fuelup self update
